@@ -4,8 +4,7 @@ import { fetchCryptoPrices } from "../services/CryptoService";
 export const useFetchCrypto = () => {
   return useQuery({
     queryKey: ["cryptoPrices"],
-    queryFn: fetchCryptoPrices,
-    staleTime: 60000
+    queryFn: fetchCryptoPrices
     //refresh is 60 seconds for public API
   });
 };
